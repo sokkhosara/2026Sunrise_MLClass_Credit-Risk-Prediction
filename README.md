@@ -38,20 +38,11 @@ This project delivers an end-to-end pipeline:
 ## 📂 Project Structure
 
     KM_CreditRisk_Prediction/
-    │
-    ├── app.py                        # Flask API
-    ├── KM_model_CreditRisk=1.0.bin   # Serialized model
-    ├── requirements.txt
-    │
-    ├── utils/
-    │   ├── viz_utils.py
-    │   ├── ml_utils.py
-    │   └── custom_transformers.py
-    │
-    ├── notebooks/
-    │   └── analysis.ipynb
-    │
-    └── README.md
+    ├── KM_Flask.ipynb                                        # Flask API
+    ├── KM_model_CreditRisk=1.0.bin                           # Serialized model
+    │── Khosara_Smey_Project_CreditRiskPrediction.ipynb       # notebooks
+    |── KM_Client.ipynb                                       # Result
+    |── README.md
 
 ------------------------------------------------------------------------
 
