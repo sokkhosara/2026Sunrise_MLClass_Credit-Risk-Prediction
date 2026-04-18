@@ -102,9 +102,15 @@ Server runs at:
 
 ``` json
 {
-  "age": 35,
-  "income": 5000,
-  "loan_amount": 20000
+    "age": "",
+    "sex": "female",
+    "job": 3,
+    "housing": "free",
+    "saving_accounts": "little",
+    "checking_account": "moderate",
+    "credit_amount": 600,
+    "duration": 120,
+    "purpose": "business"
 }
 ```
 
@@ -112,8 +118,8 @@ Server runs at:
 
 ``` json
 {
-  "credit_risk": "low",
-  "probability": 0.87
+  "risk_flag": 0,
+  "risk_probability": 0.029
 }
 ```
 
@@ -126,7 +132,8 @@ Server runs at:
 ``` bash
 curl -X POST http://127.0.0.1:5000/predict \
 -H "Content-Type: application/json" \
--d '{"age": 35, "income": 5000, "loan_amount": 20000}'
+-d '{"age": "", "sex": "female", "job": 3, "housing": "free", "saving_accounts": "little", "checking_account": "moderate",  
+    "credit_amount": 600, "duration": 120, "purpose": "business"}'
 ```
 
 ### Using Postman
